@@ -1,69 +1,810 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>陋室</title>
     <link href="css/css.css" rel="stylesheet" type="text/css" />
-    <style type="text/css">
-    </style>
+    <script type="text/javascript" src="js/js.js"></script>
 </head>
 
 <body>
     <table width="100%" border="0" cellpadding="0" cellspacing="0" class="nav">
         <tr>
             <td><img src="images/3.png" height="100" /></td>
-            <td width="100" align="center"><a href="index.html">主页</a></td>
-            <td width="100" align="center"><a href="2.html">图书分类</a></td>
-            <td width="100" align="center"><a href="3.html">入馆指南</a></td>
-            <td width="100" align="center"><a href="4.html">借阅服务</a></td>
-            <td width="100" align="center"><a href="5.html">座位预约</a></td>
+            <td><a href="#" onclick="showSection('home')">主页</a></td>
+            <td><a href="#" onclick="showSection('categories')">图书分类</a></td>
+            <td><a href="#" onclick="showSection('guide')">入馆指南</a></td>
+            <td><a href="#" onclick="showSection('services')">借阅服务</a></td>
+            <td><a href="#" onclick="showSection('booking')">座位预约</a></td>
         </tr>
     </table>
-    <table width="800" border="0" align="center" cellpadding="0" cellspacing="0" class="main">
-        <tr>
-            <td></td>
-        </tr>
-        <tr>
-            <td>
-                <table width="760" border="0" cellspacing="10" cellpadding="0">
-                    <tr>
-                        <td>
-                            <h3>伴一缕清幽的书香</h3>
-                            <h3>我甘愿将心动放在你被光阴浸得熏黄的扉页上借一束阳光</h3>
-                            <h3>我尘封已久的伤痛终究在你温暖的照耀下放弃冰凉谁话人生警醒旧籍经典</h3>
-                            <h3>谁语青春懵懂遥想当年陋室</h3>
-                            <h3>满足你一切有关书籍的想象</h3>
-                            <h3>我在陋室图书馆</h3>
-                            <h3>等雨等风,更等你!</h3>
-                        </td>
-                        <td><img src="images/11.jpg" width="383" height="289" /></td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/12.jpg" width="400" /></td>
-                        <td>
-                            <h3>最是书香能致远，腹有诗书气自华。</h3>
-                            <h3>寒冬将至，冰冷刺骨的风也许会让你心生烦闷 </h3>
-                            <h3>但图书馆内一本温暖人心的图书将会使你内心感到温暖 </h3>
-                            <h3>让你在寒冷的冬季收获一份暖阳</h3>
-                            <p></p>
-                            <p></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3>大家赶紧抓住十一月份的尾巴 </h3>
-                            <h3>走进图书馆，感受书海飘香！ </h3>
-                            <p></p>
-                            <p></p>
-                        </td>
-                        <td><img src="images/13.jpg" width="400" /></td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td>&nbsp;</td>
-        </tr>
-    </table>
+    <section id="home" class="section">
+        <table width="800" border="0" align="center" cellpadding="0" cellspacing="0" class="main">
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="760" border="0" cellspacing="10" cellpadding="0">
+                        <tr>
+                            <td>
+                                <h3>伴一缕清幽的书香</h3>
+                                <h3>我甘愿将心动放在你被光阴浸得熏黄的扉页上借一束阳光</h3>
+                                <h3>我尘封已久的伤痛终究在你温暖的照耀下放弃冰凉谁话人生警醒旧籍经典</h3>
+                                <h3>谁语青春懵懂遥想当年陋室</h3>
+                                <h3>满足你一切有关书籍的想象</h3>
+                                <h3>我在陋室图书馆</h3>
+                                <h3>等雨等风,更等你!</h3>
+                            </td>
+                            <td><img src="images/11.jpg" width="383" height="289" /></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/12.jpg" width="400" /></td>
+                            <td>
+                                <h3>最是书香能致远，腹有诗书气自华。</h3>
+                                <h3>寒冬将至，冰冷刺骨的风也许会让你心生烦闷 </h3>
+                                <h3>但图书馆内一本温暖人心的图书将会使你内心感到温暖 </h3>
+                                <h3>让你在寒冷的冬季收获一份暖阳</h3>
+                                <p></p>
+                                <p></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>大家赶紧抓住十一月份的尾巴 </h3>
+                                <h3>走进图书馆，感受书海飘香！ </h3>
+                                <p></p>
+                                <p></p>
+                            </td>
+                            <td><img src="images/13.jpg" width="400" /></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="categories" class="section" style="display: none;">
+        <table align="center">
+            <tr>
+
+                <td>A</td>
+                <td><a href="#" onclick="showSection('c21')">马克思主义、列宁主义、毛泽东思想、邓小平理论</a></td>
+                <td><img src="images/21.png" width="250" border="0" /></td>
+
+            </tr>
+            <tr>
+                <td>B</td>
+                <td><a href="#" onclick="showSection('c22')">哲学、宗教</a></td>
+                <td><img src="images/22.png" width="250" border="0" /></td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td><a href="#" onclick="showSection('c23')">社会科学总论</a></td>
+                <td><img src="images/23.jpg" width="250" border="0" /></td>
+
+            </tr>
+            <tr>
+                <td>D</td>
+                <td><a href="#" onclick="showSection('c24')">政治、法律</a></td>
+                <td><img src="images/24.png" width="250" /></td>
+            </tr>
+            <tr>
+                <td>E</td>
+                <td><a href="#" onclick="showSection('c25')">军事</a></td>
+                <td><img src="images/25.jpg" width="250" /></td>
+            </tr>
+        </table>
+    </section>
+    <section id="c21" class="section" style="display: none;">
+        <table align="center">
+
+            <tr>
+                <td rowspan="6"> 马、列、毛、邓</td>
+                <td>A1</td>
+                <td><a href="#" onclick="showSection('c211')">马克思、恩格斯著作</a></td>
+            </tr>
+            <tr>
+                <td>A2</td>
+                <td><a href="#" onclick="showSection('c212')">列宁著作</a></td>
+            </tr>
+            <tr>
+                <td>A3</td>
+                <td><a href="#" onclick="showSection('c213')">斯大林著作</a></td>
+            </tr>
+            <tr>
+                <td>A4</td>
+                <td><a href="#" onclick="showSection('c214')">毛泽东著作</a></td>
+            </tr>
+            <tr>
+                <td>A5</td>
+                <td><a href="#" onclick="showSection('c215')">邓小平著作</a></td>
+            </tr>
+        </table>
+    </section>
+    <section id="c22" class="section" style="display: none;">
+        <table align="center">
+            <tr>
+                <td rowspan="6">哲学、宗教</td>
+                <td>B1</td>
+                <td><a href="#" onclick="showSection('c221')">哲学理论</a></td>
+            </tr>
+            <tr>
+                <td>B2</td>
+                <td><a href="#" onclick="showSection('c221')">世界哲学</a></td>
+            </tr>
+            <tr>
+                <td>B3</td>
+                <td><a href="#" onclick="showSection('c221')">中国哲学</a></td>
+            </tr>
+            <tr>
+                <td>B4</td>
+                <td><a href="#" onclick="showSection('c221')">亚洲哲学</a></td>
+            </tr>
+            <tr>
+                <td>B5</td>
+                <td><a href="#" onclick="showSection('c221')">非洲哲学</a></td>
+            </tr>
+        </table>
+    </section>
+    <section id="c23" class="section" style="display: none;">
+        <table align="center">
+            <tr>
+                <td rowspan="6">哲学、宗教</td>
+                <td>C1</td>
+                <td><a href="#" onclick="showSection('c231')">社会科学理论与方法论</a></td>
+            </tr>
+            <tr>
+                <td>C2</td>
+                <td><a href="#" onclick="showSection('c231')">社会科学概况、现状、进展</a></td>
+            </tr>
+            <tr>
+                <td>C3</td>
+                <td><a href="#" onclick="showSection('c231')">社会科学机构、团体、会议</a></td>
+            </tr>
+            <tr>
+                <td>C4</td>
+                <td><a href="#" onclick="showSection('c231')">社会科学研究方法</a></td>
+            </tr>
+            <tr>
+                <td>C5</td>
+                <td><a href="#" onclick="showSection('c231')">社会科学教育与普及</a></td>
+            </tr>
+        </table>
+
+
+    </section>
+    <section id="c24" class="section" style="display: none;">
+        <table align="center">
+            <tr>
+                <td rowspan="6">哲学、宗教</td>
+                <td>B1</td>
+                <td><a href="#" onclick="showSection('c241')">政治学、政治理论</a></td>
+            </tr>
+            <tr>
+                <td>B2</td>
+                <td><a href="#" onclick="showSection('c241')">中国共产党</a></td>
+            </tr>
+            <tr>
+                <td>B3</td>
+                <td><a href="#" onclick="showSection('c241')">各国共产党</a></td>
+            </tr>
+            <tr>
+                <td>B4</td>
+                <td><a href="#" onclick="showSection('c241')">工人、农民、青年、妇女运动与组织</a></td>
+            </tr>
+            <tr>
+                <td>B5</td>
+                <td><a href="#" onclick="showSection('c241')">世界政治</a></td>
+            </tr>
+        </table>
+
+
+    </section>
+    <section id="c25" class="section" style="display: none;">
+        <table align="center">
+            <tr>
+                <td rowspan="6">哲学、宗教</td>
+                <td>B1</td>
+                <td><a href="#" onclick="showSection('c251')">军事理论</a></td>
+            </tr>
+            <tr>
+                <td>B2</td>
+                <td><a href="#" onclick="showSection('c251')">世界军事</a></td>
+            </tr>
+            <tr>
+                <td>B3</td>
+                <td><a href="#" onclick="showSection('c251')">中国军事</a></td>
+            </tr>
+            <tr>
+                <td>B4</td>
+                <td><a href="#" onclick="showSection('c251')">各国军事</a></td>
+            </tr>
+            <tr>
+                <td>B5</td>
+                <td><a href="#" onclick="showSection('c251')">战略学、战役学、战术学</a></td>
+            </tr>
+        </table>
+    </section>
+    <section id="c211" class="section" style="display: none;">
+        <table width="800" border="0" align="center" cellpadding="0" cellspacing="0" class="main">
+            <tr>
+                <td colspan="2">
+                    <div class="title">图书推荐</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="760" border="0" cellspacing="10" cellpadding="0">
+                        <tr>
+                            <td>
+                                <p>
+                                    1.《黑格尔法哲学批判导言》 马克思 写于1843年<br />
+
+                                    从唯物主义立场出发，论述对宗教的批判与对现实世界的批判的关系，<br />
+                                    对黑格尔哲学的批判同对德国现实社会的批判的关系，<br />
+                                    把批判的矛头指向现实的德国社会，并论述了德国革命的任务和可能性问题。<br />
+                                </p>
+                            </td>
+                            <td><img src="images/2111.jpg" width="250" /></td>
+                        </tr>
+                        <tr>
+
+                            <td>
+                                <p>
+                                    2.《1844年经济学哲学手稿》 马克思写于1844年<br />
+
+                                    是哲学与经济学的第一次结晶，<br />
+                                    开创了哲学指导下的经济学研究道路以及以经济学为基础的哲学发展道路，<br />
+                                    马克思的共产主义理论正是以这种结合为基础的。<br />
+                                    同时，该书也是马克思一生政治经济学批判研究的起始点。<br />
+                                </p>
+                            </td>
+                            <td><img src="images/2112.png" width="250" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    3.《神圣家族》 马恩 合著于1844年-1846年<br />
+
+                                    是马克思和恩格斯在制定无产阶级世界观的理论基础即辩证唯物主义历史唯物主义过程中的一个重要里程碑，<br />
+                                    是马克思恩格斯合作的第一部论战性质作品。<br />
+                                    列宁指出：”它奠定了革命唯物主义的社会主义的基础。”<br />
+                                </p>
+                            </td>
+                            <td><img src="images/2113.jpg" width="250" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    4.《英国工人阶级状况》 恩格斯写于1844年-1845年<br />
+
+                                    运用历史唯物主义基本观点，<br />
+                                    对资本主义经济、政治制度和阶级关系作了全面剖析，<br />
+                                    分析了资本主义生产方式必然导致的不良后果，<br />
+                                    从而揭示了资本主义本质及其必然灭亡的客观规律。<br />
+                                    还论述了现代无产阶级随着产业革命而发展的历史过程，<br />
+                                    以实地调查的大量事实，<br />
+                                    详尽地描述了英国无产阶级的悲惨生活，<br />
+                                    对资本主义和资产阶级进行了严厉的控诉。<br />
+                                </p>
+                            </td>
+                            <td><img src="images/2114.jpg" width="250" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    5.《关于费尔巴哈的提纲》 马克思写于1845年 恩格斯整理发表于1888年<br />
+
+                                    批判了费尔巴哈旧唯物主义忽视人的主观能动性和唯心主义片面夸大主观能动性的错误，<br />
+                                    阐明了马克思以实践为基础的新唯物主义哲学与旧哲学的区别；<br />
+                                    批判了旧唯物主义的唯心史观，论述于历史唯物主义的几个基本问题；<br />
+                                    从阶级基础、哲学功能和使命等角度阐述了新、旧哲学的区别。<br />
+                                </p>
+                            </td>
+                            <td><img src="images/2115.png" width="250" /></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+
+
+    </section>
+    <section id="c212" class="section" style="display: none;">
+        <table width="800" border="0" align="center" cellpadding="0" cellspacing="0" class="main">
+            <tr>
+                <td colspan="2">
+                    <div class="title">图书推荐</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="760" border="0" cellspacing="10" cellpadding="0">
+                        <tr>
+                            <td>
+                                <p>
+                                    1.《怎么办》
+
+                                    列宁写于1901年秋—1902年2月<br />
+
+                                    揭露批判了俄国党内“经济派”的错误，<br />
+                                    全面论述了建立新型马克思主义工人政党的必要性与迫切性，<br />
+                                    提出了关于党的性质、目的、作用、活动的基本原则，<br />
+                                    特别是党的思想理论建设方面的一系列重要理论观点，<br />
+                                    被称为奠定了新型马克思主义政党的思想基础的著作。<br />
+                                </p>
+                            </td>
+                            <td><img src="images/2121.jpg" width="250" /></td>
+                        </tr>
+                        <tr>
+
+                            <td>
+                                <p>
+                                    2.《马克思主义和修正主义》<br />
+
+                                    列宁写于1908年4月3日〔16日〕以前<br />
+
+                                    回顾了马克思主义在它诞生以来的半个世纪中同各种敌对的理论和思潮反复斗争 <br />
+                                    并最终取得完全胜利的历程,<br />
+                                    精辟地论证了马克思主义的发展规律，<br />
+                                    同时从哲学、政治经济学和社会主义三个方面系统地揭露和批判了修正主义的思想内容和实质，<br />
+                                    捍卫了马克思主义，武装了各国无产阶级的思想，推动了国际反修斗争的发展。<br />
+                                </p>
+                            </td>
+                            <td><img src="images/2122.jpg" width="250" /></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+
+
+    </section>
+    <section id="c213" class="section" style="display: none;">
+        <table width="800" border="0" align="center" cellpadding="0" cellspacing="0" class="main">
+            <tr>
+                <td colspan="2">
+                    <div class="title">图书推荐</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="760" border="0" cellspacing="10" cellpadding="0">
+                        <tr>
+                            <td>
+                                <p>
+                                    《斯大林传》<br />
+                                    只要他死后还被人评判，在后人的生活中就是一个活生生的人。<br />
+                                    暴君？英雄？60年后的斯大林仍然备受争议，但真实的斯大林远未清晰。<br />
+                                    英国著名俄苏史研究专家、牛津大学历史学教授罗伯特·谢伟思撰写的长篇传记文学《斯大林传》中文版，<br />
+                                    2014年由华文出版社出版发行。<br />
+                                </p>
+                            </td>
+                            <td><img src="images/2131.jpg" width="250" /></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+
+
+    </section>
+    <section id="c214" class="section" style="display: none;">
+        <table width="800" border="0" align="center" cellpadding="0" cellspacing="0" class="main">
+            <tr>
+                <td colspan="2">
+                    <div class="title">图书推荐</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="760" border="0" cellspacing="10" cellpadding="0">
+                        <tr>
+                            <td>
+                                <p>
+                                    《毛概》<br />
+                                    全称《毛泽东思想和中国特色社会主义理论体系概论（2013年修订版）》<br />
+                                    由本书编写组编辑，于2013年1月由高等教育出版社出版的图书。<br />
+
+                                    该书是马克思主义理论研究和建设工程重点教材。<br />
+                                </p>
+                            </td>
+                            <td><img src="images/2141.jpg" width="250" /></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+
+
+    </section>
+    <section id="c221" class="section" style="display: none;">
+        <table width="800" border="0" align="center" cellpadding="0" cellspacing="0" class="main">
+            <tr>
+                <td colspan="2">
+                    <div class="title">图书推荐</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="760" border="0" cellspacing="10" cellpadding="0">
+                        <tr>
+                            <td>
+                                <p>
+                                    本书讲述了公元前两千多年至今的哲学思想史，<br />
+                                    既有婆罗门教、佛教、儒家、道家等东方思想，<br />
+                                    也涵括了从古希腊罗马哲学、中世纪哲学一直到当下的存在主义等西方流派。<br />
+                                    当然，它不可能穷尽所有的思想，更没法解答一切疑问，<br />
+                                    但通过把其中那些最杰出的成果，那些关于人生最根本问题的回答，<br />
+                                    以简洁有力的方式传达出来，让我们得以穿透漫长的时空，<br />
+                                    从这些伟大心灵中汲取养分和勇气，去追寻自己的答案。<br />
+                                </p>
+                            </td>
+                            <td><img src="images/2211.jpg" width="250" /></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+
+
+    </section>
+    <section id="c231" class="section" style="display: none;">
+        <table width="800" border="0" align="center" cellpadding="0" cellspacing="0" class="main">
+            <tr>
+                <td colspan="2">
+                    <div class="title">图书推荐</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="760" border="0" cellspacing="10" cellpadding="0">
+                        <tr>
+                            <td>
+                                <p>
+                                    《乡土中国》是当代社会学家费孝通创作的社会学著作，首次出版于1948年。<br />
+                                    《乡土中国》是费孝通著述的一部研究中国农村的作品。<br />
+                                    全书由14篇文章组成，涉及乡土社会人文环境、传统社会结构、权力分配、道德体系、法礼、血缘地缘等各方面。<br />
+                                    在《乡土中国》中，作者用通俗、简洁的语言对中国的基层社会的主要特征进行了概述和分析，<br />
+                                    全面展现了中国基层社会的面貌。<br />
+                                    全书主要探讨了差序格局、男女有别、家族、血缘和地缘等。<br />
+                                    该书语言流畅，浅显易懂。<br />
+                                    《乡土中国》是学界共认的中国乡土社会传统文化和社会结构理论研究的重要代表作之一。<br />
+                                </p>
+                            </td>
+                            <td><img src="images/2311.png" width="250" /></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+
+
+    </section>
+    <section id="c241" class="section" style="display: none;">
+        <table width="800" border="0" align="center" cellpadding="0" cellspacing="0" class="main">
+            <tr>
+                <td colspan="2">
+                    <div class="title">图书推荐</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="760" border="0" cellspacing="10" cellpadding="0">
+                        <tr>
+                            <td>
+                                <p>
+                                    共产党宣言<br />
+                                    从1920 年中国首次出版陈望道翻译的《共产党宣言》全译本<br />
+                                    在新中国成立前，《共产党宣言》有7个全译本<br />
+                                    即1920年陈望道译本，1930年华岗译本，1938年成仿吾、徐冰译本，1943年博古译本，1943年陈瘦石译本，1947年乔冠华译本，1949年谢唯真译本。<br />
+                                </p>
+                            </td>
+                            <td><img src="images/2411.png" width="250" /></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+
+
+    </section>
+    <section id="c251" class="section" style="display: none;">
+        <table width="800" border="0" align="center" cellpadding="0" cellspacing="0" class="main">
+            <tr>
+                <td colspan="2">
+                    <div class="title">图书推荐</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="760" border="0" cellspacing="10" cellpadding="0">
+                        <tr>
+                            <td>
+                                <p>
+                                    1.《孙子兵法》又称《吴孙子兵法》《孙子》《孙武兵法》，<br />
+                                    由孙武撰。孙武，字长卿，春秋末期齐国人，从齐国流亡到吴国，辅助吴王经国治军，显名诸侯，被尊为“兵圣”。<br />
+                                    《孙子兵法》被誉为“兵学圣典”和“古代第一兵书”。<br />
+                                    它在我国古代军事学术和战争实践中，都起过极其重要的指导作用。<br />
+                                </p>
+                            </td>
+                            <td><img src="images/2511.png" width="250" /></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+
+
+    </section>
+    <section id="guide" class="section" style="display: none;">
+        <table width="800" border="0" align="center" cellpadding="0" cellspacing="0" class="main">
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="800" border="0" cellspacing="10" cellpadding="0">
+                        <tr>
+                            <td colspan="2">
+                                <div class="title">入馆指南</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><a href="#" onclick="showSection('openingtime')">1.开放时间</a></p>
+                                <p><a href="#" onclick="showSection('tips')">2.温馨提示</a></p>
+
+                            </td>
+                            <td>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </section>
+    <section id="openingtime" class="section" style="display: none;">
+        <table width="800" border="0" align="center" cellpadding="0" cellspacing="0" class="main">
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="800" border="0" cellspacing="10" cellpadding="0">
+                        <tr>
+                            <td colspan="2">
+                                <div class="title">开放时间</div>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+                                    <tr>
+                                        <td align="center"><img src="images/311.png" width="500" border="0" /></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+
+    </section>
+    <section id="tips" class="section" style="display: none;">
+        <table width="800" border="0" align="center" cellpadding="0" cellspacing="0" class="main">
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="800" border="0" cellspacing="10" cellpadding="0">
+                        <tr>
+                            <td colspan="2">
+                                <div class="title">温馨提示</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    温馨提示：<br />
+                                    校内读者凭本人一卡通刷卡入馆，校外读者（洛阳市居民）凭自己的社会读者借阅证刷卡入馆，或出示阅览证即可入馆。<br />
+                                    严禁在馆内吸烟和使用明火，严禁携带易燃、易爆物品入馆。<br />
+                                    言谈举止文明礼貌，仪表着装整洁，不得穿背心、拖鞋入馆。<br />
+                                    禁止携带宠物入馆。<br />
+                                    爱护书刊报纸等馆藏文献，不得折页、污损书刊；图书未经办理借阅手续的，不得私自带出书库，违者将按相关规定处罚。<br />
+                                    爱护馆内设施设备。如有损坏，照价赔偿；严禁涂抹刻画，禁止随意挪动阅览桌椅等馆内设施。<br />
+                                    馆内禁止喧哗。请将手机或电脑等设备调至静音，接打电话应注意避免影响他人阅读。<br />
+                                    禁止在书库从事与查、阅书刊无关的活动；未经许可，禁止照相、摄影。<br />
+                                    禁止在馆内张贴或散发广告及其它宣传品。<br />
+                                    读者应保持馆内清洁，禁止携带食品、饮料等进入各借阅区域，严禁随地吐痰和乱扔废弃物。<br />
+                                    遵守馆内秩序，严禁物品占用座位。<br />
+                                    未经许可禁止在二楼服务大厅使用电源插孔。<br />
+                                    馆内设有检索计算机供读者查询使用，查询完毕后应及时让位，不得长时间占用。<br />
+                                </p>
+
+                            </td>
+                            <td>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td align="center"><img src="images/321.jpg" width="200" border="0" /></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+
+    </section>
+
+    <section id="services" class="section" style="display: none;">
+        <table width="800" border="0" align="center" cellpadding="0" cellspacing="0" class="main">
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="800" border="0" cellspacing="10" cellpadding="0">
+                        <tr>
+                            <td>
+                                <div class="title">
+                                    <p>借阅服务</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">
+                                <p>
+                                    陋室书轩借阅证管理<br />
+                                    陋室图书馆借阅证包括：有效的校园卡、图书馆发放的有效期限内的各类借阅证。<br />
+
+                                    一、借阅证的办理<br />
+
+                                    1. 本校中事业编制及人事代理编制的教职工和学校按照“国家普通高校招生任务”招收的本专科生、研究生，凭学校发放的本人校园卡即可到图书馆借阅图书；<br />
+
+
+                                    二、借阅证的使用<br />
+
+
+                                    1. 有效的校园卡借阅证是读者进入图书馆以及在馆内借阅文献，进行学习活动的凭证，读者进入图书馆时应随身携带，按规定使用，并自觉接受工作人员的检查；<br />
+
+                                    2. 校园卡借阅证只限本人使用，不得抵押、转借。借用或冒用他人校园卡借书证，一经发现即扣留该证，并区别不同情况给予停借处罚；<br />
+
+                                    3. 如有恶意使用他人校园卡借阅证者（如偷、捡别人借阅证使用），将给予严肃处理，暂停其借阅权六个月以上，直至最终取消其借阅权，并通报有关单位；<br />
+
+                                    4. 校园卡借书证只可在有效期内使用，过期失效；<br />
+
+                                    5. 各类读者利用图书馆的权限可见读者借阅权限表。<br />
+
+                                    三、借阅证的挂失及补办<br />
+
+                                    校园卡丢失后，请到校园卡管理室按有关规定办理挂失补办, 补办后将自动开通借阅功能。<br />
+
+                                    四、退证及离校<br />
+
+                                    1. 读者离开学校前（包括毕业离校、工作调动、休学、退学、离职、进修结业等）须将所借图书全部归还，并到办证处办理注销手续，方可办理离校手续；<br />
+
+                                    2. 读者离校时如不按规定到图书馆办理还书退证手续，由主管单位或担保人负责追回图书或承担赔偿。<br />
+
+                                    五、借书权限<br />
+
+
+                                    <img width="800" src="images/41.png" /><br />
+                                    <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="booking" class="section" style="display: none;">
+        <table width="800" border="0" align="center" cellpadding="0" cellspacing="0" class="main">
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="800" border="0" cellspacing="10" cellpadding="0">
+                        <tr>
+                            <td colspan="2">
+                                <div class="title">
+                                    <p>座位预约规则</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">
+                                <p>
+                                    <br />1. 本校学生可以预约当日或次日的座位，
+                                    预约成功后本校学生即可以使用该座位至当日座位关闭时间。<br />
+                                    <br /> 2. 在图书馆外的本校学生预约当日座位，
+                                    需在预约成功后30分钟内通过门禁闸机刷卡（刷脸）入馆，系统自动完成签到；
+                                    已通过门禁闸机刷卡（刷脸）入馆的本校学生预约当日座位，预约成功后需到现场选座机刷卡签到。<br /> <br />
+                                    3. 预约次日座位的本校学生，需在次日8：00前通过门禁闸机刷卡（刷脸）入馆系统自动完成签到。<br /><br />
+                                    4. 本校学生可以在当日7：00之前取消当日的预约座位，7：00之后当日预约的座位不能取消；
+                                    本校学生如需取消次日的预约座位，需在次日7：00之前办理。<br /> <br />
+                                    5. 临时离开：在选座机上刷卡或从网页及微信端选择“临时离开”，座位将保留60分钟。
+                                    已选择“临时离开”的本校学生在保留时间内返回座位时，需签到方可继续使用原座。<br /> <br />
+                                    6. 请本校学生自觉维护馆内秩序，勿随意移动桌椅，勿将个人物品遗留在座位上。
+                                    每日闭馆后自习区进行清理，如有丢失，责任自负。
+                                </p>
+
+                                <p>
+                                    <br />
+                                </p>
+                            </td>
+                            <td valign="top">
+                                <table width="200" border="0" cellspacing="0" cellpadding="0">
+                                </table>
+                            </td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </section>
+    <footer>
+        <p>&copy; 2023 陋室图书馆 版权所有</p>
+    </footer>
+
 </body>
+
 </html>
